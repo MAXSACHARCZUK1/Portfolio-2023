@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   const textoAnimado = document.getElementById('texto-animado');
-const texto = "Visita mi GitHub y Linkedin";
+const texto = "Visit my GitHub and Linkedin";
 let index = 0;
 
 function escribirTexto() {
