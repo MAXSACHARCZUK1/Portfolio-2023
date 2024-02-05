@@ -16,10 +16,10 @@ body {
   display: flex;
   align-items: center;
   height: 27px;
-  width: 90%;
 }
 .anuncio p {
   font-weight: bold;
+  background-color: black;
   font-size: 25px;
   overflow: hidden;
   white-space: nowrap;
@@ -28,7 +28,7 @@ body {
 .redes-sociales {
  display: flex;
  justify-content: end;
- height: 58px;
+ 
 }
 
 .redes-sociales a {
@@ -41,14 +41,10 @@ body {
   color: lightgray;
   transform: translateY(-5px); /* Movemos el ícono hacia arriba*/
 }
-
-
-
 nav {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 nav ul {
   display: flex;
   list-style-type: none;
@@ -57,7 +53,6 @@ nav ul {
   justify-content: center;
   transition: transform 0.3s ease;
 }
-
 nav li:hover {
   transform: scale(1.3); /* Aplicamos un zoom del 10% al hacer hover */
 }
@@ -121,6 +116,10 @@ nav ul li:nth-child(2) a {
   color: white;
   justify-content: center;
 }
+.styleform{ 
+  display: flex;
+  text-decoration: none;
+}
 
 .ocultar {
   display: none;
@@ -130,12 +129,10 @@ li:hover {
   box-shadow: 0 0 50px white;
   background-color: rgba(255, 255, 255, 0.3); /* Cambia el fondo al hacer hover */
 }
-
 .highlight {
   font-weight: bold; /* Aplica negrita a la palabra */
   color: red; /* Cambia el color de la palabra */
 }
-
 p {
   color: white;
   max-height: 100%;
@@ -296,8 +293,6 @@ gap: 2rem;
   animation: suspension 3s infinite;
 
 }
-
-
 @keyframes suspension {
   0% {
     transform: translateY(0);
@@ -541,77 +536,12 @@ gap: 2rem;
     max-width: 150px;
     max-height: 75px;
   }
-  .campo1 {
-    padding: 1.5rem;
-    width: 250px;
-    height: 300px;
-    border: solid .5px aqua;
-    border-radius: 20%;
-    transform: scale(1.0);
-    box-shadow: 0 0 40px rgb(102, 234, 234);
-    animation: suspension 2s infinite;
-  }
-  @keyframes suspension {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  @media screen and (max-width: 360px) {
-
-  .mis__experiencia__1 {
-    font-size: 13px;
-  }
-  .listado{
-    font-size: 13px;
-    list-style: none;
-  }
-  .nav.visible {
-    opacity: 1;
-    visibility: visible;
-    width: 100%;
-    height: 100%;
-  }
+.anuncio p {
+  color: #45a049;
+  font-size: 14px;
 }
+.styleform{ 
+  display: flex;
+  text-decoration: none;
 }
-@media screen and (max-width: 270px) {
-  p{
-    font-size: 15px;
-    margin-top: 4rem;
-  }
-  .campo1{
-    margin-bottom: 100px; 
-  }
-}
-@media screen and (max-width: 250px) {
-  p{
-    font-size: 15px;
-    margin-top: 10rem;
-  }
-  .campo1{
-    margin-bottom: 200px; 
-  }
-}
-@media screen and (max-width: 230px) {
-  .abrir-menu{
-    margin-right: 1px;
-  }
-  .contenedor-image img {
-    max-width: 130px;
-  }
-  .h2-web{
-    font-size: 15px;
-  }
-  p{
-    font-size: 15px;
-    margin-top: 20rem;
-  }
-  .campo1{
-    margin-bottom: 400px; 
-  }
 }
